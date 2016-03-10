@@ -1,0 +1,634 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>資訊安全大會筆記</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+<style type="text/css">
+div.prism-show-language {
+	position: relative;
+}
+
+div.prism-show-language > div.prism-show-language-label {
+	color: black;
+	background-color: #CFCFCF;
+	display: inline-block;
+	position: absolute;
+	bottom: auto;
+	left: auto;
+	top: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	font-size: 0.9em;
+	border-radius: 0 0 0 5px;
+	padding: 0 0.5em;
+	text-shadow: none;
+	z-index: 1;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+}
+</style>
+</head>
+<body>
+<p>資訊安全<del>恐赫</del>大拜拜的心得跟各位分享，</p>
+
+<h1 id="toc_0">APT</h1>
+
+<ul>
+<li>目的：拿機密資料</li>
+<li>手法：有組織的駭客集團，針對目標客製攻擊路線，持續性地滲透到組織內取得administrator權限，2015年駭客入侵到企業發現的停留時間（ Dwell-Time）為146天
+
+<ul>
+<li>phishing email/site</li>
+<li>social engineer</li>
+<li>Free USB</li>
+<li>router漏洞</li>
+<li>內鬼</li>
+</ul></li>
+<li><p>預防：入侵是無可避免的!!</p>
+
+<ul>
+<li>半數是由內部發起，防內鬼很重要</li>
+<li>嚴密監控privileged account</li>
+<li>在內部系統主機埋地雷讓駭客踩</li>
+<li>Multi-Factor Authentication</li>
+<li>事件應變計畫（Incident Response Plan ，IRP）</li>
+</ul></li>
+<li><p>Reference
+<a href="http://www.ithome.com.tw/news/104395">參考資料</a>
+<a href="https://youtu.be/RyQiz8AudQo">參考影片</a>
+<img src="https://dl.dropbox.com/s/h9qt8xjjcc43a48/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_1.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/4hthvusyn63mkv5/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_2.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/23deh9qfv27fvbx/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_20.jpg?dl=0" alt=""></p></li>
+</ul>
+
+<h1 id="toc_1">Ransomware</h1>
+
+<ul>
+<li>目的：要錢 (比特幣付贖金)</li>
+<li>手法：執行來源不明的檔案, 可規避掃毒軟件的malware
+
+<ul>
+<li>phishing email/site</li>
+<li>Free USB</li>
+<li>偽裝成使用者有興趣的軟體 (e.g., bt下載軟體)</li>
+</ul></li>
+<li><p>預防：Baaaaaaaaaaaaaaaaaaaaaaaaaaackup</p>
+
+<ul>
+<li>定期備份佐以定期restore演練</li>
+<li>資安教育, 留意來源不明的檔案及軟體</li>
+<li>server絕對不能連外網</li>
+<li>mail server設定附件規則</li>
+<li>使用vm上網</li>
+</ul></li>
+<li><p>Reference</p></li>
+</ul>
+
+<p><a href="http://www.inside.com.tw/2016/03/07/first-os-x-ransomware-detected">首件 OS X 「功能完整」勒索軟體現身！被發現藏於 BT 軟體</a>
+<img src="https://dl.dropbox.com/s/f97449jjxghrw80/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_18.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/qbt1rm4i8t9ex89/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_30.jpg?dl=0" alt=""></p>
+
+<h1 id="toc_2">DOS</h1>
+
+<ul>
+<li>目的：癱煥系統</li>
+<li>手法：使用惡意流量大量且頻繁地存取以下網路設備
+
+<ul>
+<li>ADC, Application Delivery Controller</li>
+<li>DNS</li>
+<li>Firewall</li>
+<li>IPS</li>
+</ul></li>
+<li>防護：買設備/solution
+
+<ul>
+<li>DDoS指紋特徵資料, identifed source of malicious traffic and blacklist it</li>
+<li>add server capability and network bandwidth</li>
+</ul></li>
+</ul>
+
+<h1 id="toc_3">軟體安全</h1>
+
+<ul>
+<li>Injection還是Top 1</li>
+<li>mobile app要注意被reverse engineer</li>
+<li>軟體要安全, 從require階段就要納入規劃</li>
+<li>善用源碼檢測工具</li>
+</ul>
+
+<p><img src="http://image.slidesharecdn.com/owasp-top-ten-mapping-2015-05-lwc-150526213615-lva1-app6891/95/owasp-toptenmapping201505lwc-3-638.jpg?cb=1432676655" alt="">
+<img src="https://www.owasp.org/images/a/ac/2014-01-26_20-23-29.png" alt="">
+<img src="https://dl.dropbox.com/s/itb0hkk1qr3afqc/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_4.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/t2r4np7fua07xls/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_5.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/rpoiwghr96kgxqp/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_6.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/4jbut57072vcjlb/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_7.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/ihlxigqq41fkgcf/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_8.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/ccdbo12dv0fpwhf/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_11.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/o2e0aul8v3xazah/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_9.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/j93crbrb20h4inw/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_15.jpg?dl=0" alt="">
+<img src="https://dl.dropboxusercontent.com/s/papc2piio1mqrql/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_51.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/27s9mghtf4phldl/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_52.jpg?dl=0" alt=""></p>
+
+<h1 id="toc_4">FinTech</h1>
+
+<ul>
+<li>手機的交易token要使用hardware-specific資訊加密才帶不走</li>
+<li>支付卡資料安全標準PCI DSS</li>
+<li>IDGate蓋特資訊執行長主講，已與七家銀行合作，產品符合香港新加坡規範，看來是領導廠商</li>
+</ul>
+
+<p><img src="https://dl.dropbox.com/s/9s85xjw4397fb97/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7%202016-03-09%20%E4%B8%8B%E5%8D%885.48.51.png?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/gzgt3841rw4k4oh/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_32.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/gotria9aohf4i89/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_33.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/5fo88gxjnmo3z56/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_35.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/5h5grvv5o22jlcm/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_36.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/j1tz9fbnnbydmj0/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_37.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/587ket3mi88pb3g/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_38.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/0m16otbtjwfks6x/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_39.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/w4cqz510gcc7qzo/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_40.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/gqhk7z38ey629j0/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_42.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/7o96gmew2meeike/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_43.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/6uef8vhx69pirs3/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_44.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/iohronukkt6o6xd/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_45.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/xryhcud3qkzf7kp/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_46.jpg?dl=0" alt=""></p>
+
+<h1 id="toc_5">資安人員如何協助企業面對層出不窮的資安威脅(HITCON總召主講)</h1>
+
+<p><img src="https://dl.dropbox.com/s/9t8mwilozrfaw81/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_22.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/ggcrzswq5ozwmib/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_23.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/c71pr9tjmnxk2wb/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_24.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/pa5rjhxtetz69e1/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_25.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/z0xv5u41zwv5sho/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_26.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/nenwgoh7ohoxyfu/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_27.jpg?dl=0" alt="">
+<img src="https://dl.dropbox.com/s/sjc3o8yu6rmqmkk/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8%E5%A4%A7%E6%9C%83_28.jpg?dl=0" alt=""></p>
+
+<h1 id="toc_6">個人心得</h1>
+
+<ul>
+<li>資訊安全非常重要, 但講者(廠商)難免有點放大效果</li>
+<li>有機會練英聽，聽力真的很重要，不然直接看ithome facebook的快訊還比較知道外國人在說什麼</li>
+<li>報名人數 3,500，我看超過3千人都是男性，所以男廁要排隊</li>
+<li>同時間有5個議程，比較熱門的議程大排長龍，太後面進場要到坐地板</li>
+<li>會場沒吃的, 中午要外出覓食</li>
+<li>主辦單位很賊，兩天HITCON的議程都是在最後一場</li>
+<li>議程間隔時間10到20分鐘不等, 扣除如廁、換場路程、議程delay、看show gril拿贈品、排隊進場後，時間其實是相當相當緊湊, 我兩天下午都是1點喝一次水，然後一直趕場到5點才放水，所以千萬別補充過多水份，不然會膀胱發炎。</li>
+<li>贈品如附圖, 歡迎取用。</li>
+</ul>
+
+<p><img src="https://dl.dropbox.com/s/azaarvcv0jsysf7/P_20160310_155857.jpg?dl=0" alt=""></p>
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=_self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==n)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,n,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(n.call(e,l,e[l],a||l),"Object"!==t.util.type(e[l])||r[e[l]]?"Array"!==t.util.type(e[l])||r[e[l]]||(r[e[l]]=!0,t.languages.DFS(e[l],n,l,r)):(r[e[l]]=!0,t.languages.DFS(e[l],n,null,r)))}},plugins:{},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),l=0;a=r[l++];)t.highlightElement(a,e===!0,n)},highlightElement:function(n,a,r){for(var l,i,o=n;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=t.languages[l]),n.className=n.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=n.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=n.textContent,u={element:n,language:l,grammar:i,code:s};if(!s||!i)return t.hooks.run("complete",u),void 0;if(t.hooks.run("before-highlight",u),a&&_self.Worker){var g=new Worker(t.filename);g.onmessage=function(e){u.highlightedCode=e.data,t.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),t.hooks.run("after-highlight",u),t.hooks.run("complete",u)},g.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=t.highlight(u.code,u.grammar,u.language),t.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(n),t.hooks.run("after-highlight",u),t.hooks.run("complete",u)},highlight:function(e,a,r){var l=t.tokenize(e,a);return n.stringify(t.util.encode(l),r)},tokenize:function(e,n){var a=t.Token,r=[e],l=n.rest;if(l){for(var i in l)n[i]=l[i];delete n.rest}e:for(var i in n)if(n.hasOwnProperty(i)&&n[i]){var o=n[i];o="Array"===t.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],g=u.inside,c=!!u.lookbehind,f=0,h=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){u.lastIndex=0;var m=u.exec(d);if(m){c&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),P=[p,1];b&&P.push(b);var A=new a(i,g?t.tokenize(m,g):m,h);P.push(A),w&&P.push(w),Array.prototype.splice.apply(r,P)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("Array"===t.util.type(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var l={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}t.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code,l=n.immediateClose;_self.postMessage(t.highlight(r,t.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+<script type="text/javascript">
+!function(){if("undefined"!=typeof self&&self.Prism&&self.document){var e={css:"CSS",clike:"C-like",javascript:"JavaScript",abap:"ABAP",actionscript:"ActionScript",apacheconf:"Apache Configuration",apl:"APL",applescript:"AppleScript",asciidoc:"AsciiDoc",aspnet:"ASP.NET (C#)",autoit:"AutoIt",autohotkey:"AutoHotkey",basic:"BASIC",csharp:"C#",cpp:"C++",coffeescript:"CoffeeScript","css-extras":"CSS Extras",fsharp:"F#",glsl:"GLSL",http:"HTTP",inform7:"Inform 7",json:"JSON",latex:"LaTeX",lolcode:"LOLCODE",matlab:"MATLAB",mel:"MEL",nasm:"NASM",nginx:"nginx",nsis:"NSIS",objectivec:"Objective-C",ocaml:"OCaml",parigp:"PARI/GP",php:"PHP","php-extras":"PHP Extras",powershell:"PowerShell",jsx:"React JSX",rest:"reST (reStructuredText)",sas:"SAS",sass:"Sass (Sass)",scss:"Sass (Scss)",sql:"SQL",typescript:"TypeScript",vhdl:"VHDL",vim:"vim",wiki:"Wiki markup",yaml:"YAML"};Prism.hooks.add("before-highlight",function(s){var a=s.element.parentNode;if(a&&/pre/i.test(a.nodeName)){var t,i,r=a.getAttribute("data-language")||e[s.language]||s.language.substring(0,1).toUpperCase()+s.language.substring(1),l=a.previousSibling;l&&/\s*\bprism-show-language\b\s*/.test(l.className)&&l.firstChild&&/\s*\bprism-show-language-label\b\s*/.test(l.firstChild.className)?i=l.firstChild:(t=document.createElement("div"),i=document.createElement("div"),i.className="prism-show-language-label",t.className="prism-show-language",t.appendChild(i),a.parentNode.insertBefore(t,a)),i.innerHTML=r}})}}();
+</script>
+</body>
+
+</html>
